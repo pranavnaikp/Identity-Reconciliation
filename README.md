@@ -1,15 +1,23 @@
 # Identity Reconciliation
 
 ## Link to Hosted Project
-- [Identity Reconciliation - Hosted Project](https://identity-reconciliation-yx7m.onrender.com/api/)
+- [Identity Reconciliation - Hosted Project](https://identity-reconciliation-yx7m.onrender.com/)
 
 ## Link to Github Repository
-- [Food Ordering App - GitHub Repository](https://github.com/pranavnaikp/Identity-Reconciliation)
+- [Identity Reconciliation  - GitHub Repository](https://github.com/pranavnaikp/Identity-Reconciliation)
+
+## Endpoints 
+- /api/identify - (post method)
+- /api/contact/:id - (get method to get user details by id)
+- /api/contactByEmail/:email - (get method to get user details by email)
+- /api/contactByPhoneNumber/:phoneNumber - (get method to get user details by phone number)
+
 
 ## Installation
 
 ### Prerequisites
 Ensure you have the following installed:
+- Postgresql
 - Node.js
 
 ### Steps to Install
