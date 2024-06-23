@@ -53,3 +53,6 @@ Ensure you have the following installed:
 - Backend: Node.js
 - Database: Postgesql
 
+###  Result Images
+<img width="821" alt="image" src="https://github.com/pranavnaikp/Identity-Reconciliation/assets/84633869/c54e8570-2035-4693-a3fa-ecd9ca78f77d">
+
