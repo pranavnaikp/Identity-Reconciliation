@@ -1,9 +1,13 @@
 import 'reflect-metadata';
-import express, { Request, Response } from 'express';
+import express from 'express';
 import bodyParser from 'body-parser';
 import { createConnection, Connection } from 'typeorm';
 import identifyRouter from './routes/identify';
 import { Contact } from './entity/contact';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
@@ -12,11 +16,11 @@ const initializeApp = async () => {
   try {
     const connection: Connection = await createConnection({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: '123456',
-      database: 'identity_reconciliation',
+      host: process.env.DATABASE_HOST,
+      port: parseInt(process.env.DATABASE_PORT, 10),
+      username: process.env.DATABASE_USERNAME,
+      password: process.env.DATABASE_PASSWORD,
+      database: process.env.DATABASE_NAME,
       synchronize: true,
       logging: false,
       entities: [Contact],
