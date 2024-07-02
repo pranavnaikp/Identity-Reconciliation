@@ -1,7 +1,7 @@
 # Identity Reconciliation
 
 ## Link to Hosted Project
-- [Identity Reconciliation - Hosted Project](https://identity-reconciliation-yx7m.onrender.com/)
+- [Identity Reconciliation - Hosted Project](https://identity-reconciliation-yx7m.onrender.com/api)
 
 ## Link to Github Repository
 - [Identity Reconciliation  - GitHub Repository](https://github.com/pranavnaikp/Identity-Reconciliation)
